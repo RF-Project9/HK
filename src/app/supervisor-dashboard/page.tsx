@@ -1,13 +1,16 @@
 import React from 'react';
-// ✅ Menunjuk tepat ke layout.tsx yang sudah ada
+// ✅ Menunjuk tepat ke layout utama
 import AppLayout from '@/app/layout';
-// ✅ Sesuai lokasi berkas yang ada
-import RoomAttendantContent from './components/RoomAttendantContent';
+// ✅ Sesuaikan nama berkas dengan yang ada di folder components
+// Jika nama berkasnya SupervisorContent.tsx → pakai ini:
+import SupervisorContent from './components/SupervisorContent';
+// Jika nama berkasnya SupervisorDashboardContent.tsx → pakai ini:
+// import SupervisorContent from './components/SupervisorDashboardContent';
 
-export default function RoomAttendantDashboardPage() {
+export default function SupervisorDashboardPage() {
   return (
-    <AppLayout currentPath="/room-attendant-dashboard">
-      <RoomAttendantContent />
+    <AppLayout currentPath="/supervisor-dashboard">
+      <SupervisorContent />
     </AppLayout>
   );
 }
