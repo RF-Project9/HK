@@ -15,12 +15,7 @@ const nextConfig = {
     minimumCacheTTL: 60,
     qualities: [75, 85, 100],
   },
-  webpack(
-    config,
-    {
-      dev: dev
-    }
-  ) {
+  webpack(config, { dev }) {
     config.module.rules.push({
       test: /\.(jsx|tsx)$/,
       exclude: [/node_modules/],
@@ -42,4 +37,5 @@ const nextConfig = {
     return config;
   },
 };
+
 export default nextConfig;
