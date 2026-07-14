@@ -1,11 +1,11 @@
 import React from 'react';
-import AppLayout from '@/components/AppLayout';
-import MainDashboardContent from './components/MainDashboardContent';
+import AppLayout from '@/app/layout';
+import SupervisorContent from './components/SupervisorContent';
 
-export default function MainDashboardPage() {
+export default function SupervisorDashboardPage() {
   return (
-    <AppLayout currentPath="/">
-      <MainDashboardContent />
+    <AppLayout currentPath="/supervisor-dashboard">
+      <SupervisorContent />
     </AppLayout>
   );
 }
